@@ -1,2 +1,21 @@
+@"
+# Ignore large/real logs
 access.log
-*.log
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Python venv / env
+venv/
+env/
+.env
+
+# Temp & build
+*.tmp
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+"@ | Set-Content -Path .gitignore -Encoding utf8 -Force
