@@ -26,13 +26,15 @@ It allows you to extract meaningful insights from large Nginx access logs direct
 
 ## 📁 Project Structure
 
+
+```
 nginx-log-analyser/
 │
 ├── nginx-log-analyser.sh   # Main analysis script (executable)
 ├── sample.log              # Sample log file for testing/demo
 ├── .gitignore              # Ignored files
 └── README.md               # Documentation
-
+```
 ---
 
 ## ⚙️ Script Requirements
@@ -153,4 +155,4 @@ You can contribute by:
 DevOps Engineer | Linux | Cloud | Automation | Shell Scripting  
 
 GitHub: https://github.com/Ni7H1N  
-LinkedIn: https://www.linkedin.com/in/nithin-karipalli?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLd09FIXaQO2bPM6br3vb6A%3D%3D
+LinkedIn: https://www.linkedin.com/in/nithin-karipalli
