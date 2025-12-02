@@ -1,9 +1,8 @@
-cat > README.md << 'EOF'
 # 🧪 Nginx Log Analyser — Bash Shell Script Tool
 
 A lightweight, efficient, and production-ready **Nginx Access Log Analysis Tool** written using pure **Bash + awk + sort + uniq**.
 
-This project demonstrates real-world **DevOps**, **Linux**, **Shell Scripting**, and **Log Analysis** skills — essential for SRE, Cloud, Platform and Security Engineering roles.
+This project demonstrates real-world **DevOps**, **Linux**, **Shell Scripting**, and **Log Analysis** skills — essential for SRE, Cloud, Platform, and Security Engineering roles.
 
 It allows you to extract meaningful insights from large Nginx access logs directly from the command line.
 
@@ -18,23 +17,21 @@ It allows you to extract meaningful insights from large Nginx access logs direct
 - ✔ Supports:
   - `./nginx-log-analyser.sh access.log`
   - `cat access.log | ./nginx-log-analyser.sh`
-- ✔ Works with large Nginx production logs  
+- ✔ Works with large production logs  
 - ✔ Pure Bash — **no external dependencies**  
-- ✔ Clean output formatting  
+- ✔ Clean, readable CLI output  
 - ✔ Beginner-friendly and production-ready  
 
 ---
 
 ## 📁 Project Structure
 
-\`\`\`
 nginx-log-analyser/
 │
 ├── nginx-log-analyser.sh   # Main analysis script (executable)
 ├── sample.log              # Sample log file for testing/demo
 ├── .gitignore              # Ignored files
 └── README.md               # Documentation
-\`\`\`
 
 ---
 
@@ -57,27 +54,20 @@ No third-party packages required.
 
 ### 1️⃣ Make the script executable
 
-\`\`\`bash
 chmod +x nginx-log-analyser.sh
-\`\`\`
 
 ### 2️⃣ Run with a file
 
-\`\`\`bash
 ./nginx-log-analyser.sh sample.log
-\`\`\`
 
 ### 3️⃣ Or via stdin
 
-\`\`\`bash
 cat access.log | ./nginx-log-analyser.sh
-\`\`\`
 
 ---
 
 ## 📊 Example Output
 
-\`\`\`
 Top 5 IP addresses with the most requests:
 178.128.94.113 - 1087 requests
 142.93.136.176 - 1087 requests
@@ -105,7 +95,6 @@ Mozilla/5.0 (Windows NT 10.0...) - 513 requests
 Mozilla/5.0 (Mac OS X 10_15_7...) - 332 requests
 Custom-AsyncHttpClient           - 294 requests
 Mozilla/5.0 (Mac OS X 10_15_7...) - 282 requests
-\`\`\`
 
 ---
 
@@ -115,15 +104,15 @@ Mozilla/5.0 (Mac OS X 10_15_7...) - 282 requests
 Uses `awk` to parse the IP, method, URL path, status code, and user agent.
 
 ### ✔ Count occurrences  
-Uses `sort | uniq -c` to count repeating patterns.
+Uses `sort | uniq -c` to count recurring values.
 
 ### ✔ Display top results  
-Uses `sort -rn | head -n 5` to display most frequent entries.
+Uses `sort -rn | head -n 5` to show the most frequent entries.
 
-### ✔ Temporary files  
-Used to keep categories separated cleanly and safely.
+### ✔ Temporary storage  
+Keeps categories separated cleanly and safely.
 
-This mirrors **real DevOps tooling patterns** — fast, reliable, scalable.
+This mirrors real DevOps tooling patterns — fast, reliable, scalable.
 
 ---
 
@@ -131,20 +120,18 @@ This mirrors **real DevOps tooling patterns** — fast, reliable, scalable.
 
 - JSON output mode (`--json`)  
 - ANSI-colored terminal output  
-- Docker build (`docker run -v logs:/logs analyser`)  
+- Docker support  
 - Time-range filtering (`--from --to`)  
-- GitHub Actions CI to auto-analyse logs  
+- GitHub Actions CI  
 - Export results to CSV  
 
 ---
 
 ## 📦 Installation
 
-\`\`\`bash
 git clone https://github.com/Ni7H1N/nginx-log-analyser.git
 cd nginx-log-analyser
 chmod +x nginx-log-analyser.sh
-\`\`\`
 
 ---
 
@@ -166,6 +153,4 @@ You can contribute by:
 DevOps Engineer | Linux | Cloud | Automation | Shell Scripting  
 
 GitHub: https://github.com/Ni7H1N  
-LinkedIn: *Add your link here*
-
-EOF
+LinkedIn: https://www.linkedin.com/in/nithin-karipalli?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLd09FIXaQO2bPM6br3vb6A%3D%3D
